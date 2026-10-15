@@ -1,0 +1,10 @@
+services:
+  seddo-maquettes:
+    build: .
+    container_name: seddo-maquettes
+    restart: unless-stopped
+    expose:
+      - "80"
+    # Pour un test local sans Dokploy, décommentez :
+    # ports:
+    #   - "8080:80"
